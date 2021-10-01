@@ -1,0 +1,58 @@
+SENHAS:
+ORACLE: oracle
+WIN: 159753
+HR: hr
+
+Banco de dados conteiner multitenant: localhost:1521
+
+Banco de dados plugável: localhost:1521/XEPDB1
+
+URL do EM Express: https://localhost:5500/em
+
+Startup e Shutdown da instância e Serviços do Oracle Database 18c XE
+
+1 - Verifica o status da instância
+	oracle instance manager
+
+2 - Startup da instância e serviços
+
+3 - Shutdown da instância e serviços
+
+
+Criar conexao:
+Assistente de configuração de rede no iniciar
+
+cmd -> sqlplus -> sqlplus system/oracle@xepdb1 ==> sqlplus usuario/senha@string_conexao
+
+
+ORACLE SQL DEVELOPER:
+
+1 - Desbloquear a conta do usuário hr => alter user hr account unlock;
+1.1 - Para executar um comando no sql developer => botao verde, F9, F5 ou CTRL + ENTER
+
+2 - Alterar a senha do usuário hr => alter user hr identified by hr;
+
+
+COMANDOS SQL - DML => Data Manipulation Language:
+* SELECT
+* INSERT
+* UPDATE
+* DELETE
+* MERGE (COMPARA DUAS TABELAS: ORIGEM E DESTINO E ATUALIZA A TABELA DE DESTINO)
+
+COMANDOS SQL - DDL => Data DEFINITION Language:
+* CREATE
+* ALTER
+* DROP
+* RENAME
+* TRUNCATE
+* COMMENT
+
+COMANDOS SQL - DCL => Data Control Language:
+* GRANT
+* REVOKE
+
+COMANDOS DE CONTROLE DE TRANSAÇÃO:
+* COMMIT
+* ROLLBACK
+* SAVEPOINT
